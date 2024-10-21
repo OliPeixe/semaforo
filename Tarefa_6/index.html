@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semáforo</title>
+</head>
+<style>
+    img{
+        width: 50%;
+    }
+    .button1{
+        background-color: rgb(255, 61, 61);
+        padding: 5% 10%;
+        border: 0;
+    }
+    .button2{
+        background-color: rgb(255, 245, 65);
+        padding: 5% 10%;
+        border: 0;
+    }
+    .button3{
+        background-color: rgb(66, 226, 66);
+        padding: 5% 10%;
+        border: 0;
+    }
+    .button4{
+        background-color: rgb(255, 255, 255);
+        padding: 5% 10%;
+        border: 0;
+    }
+    body {
+        background-image: url(./img/8cd6053c1e15b9054eb0114f63fbc51c.jpeg);
+        background-size: cover;
+
+    }
+</style>
+<center>
+<body>
+    <table>
+            <tr>
+                <th>
+                    <button class="button1"
+                    onclick="document.getElementById('semafero').src='./img/semafero_red.png'">
+                        Ligar a luz vermelha
+                    </button>
+                </th>
+                <th rowspan="3">
+                    <img id="semafero" src="./img/semafero_off.png">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <button class="button2"
+                onclick="document.getElementById('semafero').src='./img/semafero_yellow.png'">
+                    Ligar a luz amarela
+                </button>
+                </th>
+
+            </tr>
+            <tr>
+                <th>
+                <button class="button3"
+                onclick="document.getElementById('semafero').src='./img/semafero_green.png'">
+                    Ligar a luz verde
+                </button>
+                </th>
+
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button class="button4"
+                onclick="document.getElementById('semafero').src='./img/semafero_off.png'">
+                    Desligar o Semáfero
+                </button>
+                </th>
+            </tr>
+    </table>
+
+</body>
+</center>
+</html>
